@@ -1,13 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
-            Kawindu priyashan
+            Testpage
         </title>
-        <body>
-            <h1>
-                Hello! I'm Kawindu.
-            </h1>
-        </body>
+        <link rel="icon" type="image/png" href="assets/images/kp-white-logo.png">
+        <meta charset="UTF-8">
+        <meta name="author" content="kawindu-priyashan,Full stack developer">
+        <meta name="keywords" content="kawindu-priyashan">
+        <meta name="description" content="I'm Kawindu priyashan & Welcome to my portfolio.">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
+        
+    <body>
+
+        <!--------------------------------------------- Header ------------------------------------------------------->
+        <header id="header">
+            <hr>
+            
+                <img class="logo" src="assets/images/kp-white-logo.png" width="80">
+                <nav>
+                    <ul>
+                        <li><a class="btn-nav" id="btn-home" href="#home">Home</a></li>
+                        <li><a class="btn-nav" id="btn-about" href="#about">About</a></li>
+                        <li><a class="btn-nav" id="btn-skills" href="#skills">Skills</a></li>
+                        <li><a class="btn-nav" id="btn-certificates" href="#certificates">Certificates</a></li>
+                        <li><a class="btn-nav" id="btn-experience" href="#experience">Experience</a></li>
+                        <li><a class="btn-nav" id="btn-projects" href="#projects">Projects</a></li>
+                        <li><a class="btn-nav" id="btn-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            <hr>
+
+        </header>
+        <main>
+
+            <!--------------------------------------------- Hero section ------------------------------------------------------->
+
+            <section id="home" class="hero-section">
+                <div class="video-div">
+
+                    <div class="hello-div">
+                        <h1>Hello <br>I'm Kawindu</h1>
+                        <h3>A Full Stack Developer</h3>
+                    </div>
+
+                    <video  width="500px" 
+                        autoplay 
+                        muted 
+                        loop 
+                        poster="assets/images/hacker_video_pic.png">
+                
+                        <source src="assets/videos/hacker_video.mp4">
+                    </video>
+                </div>
+            </section>
+
+            <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+            <hr>
+
+            <!--------------------------------------------- About section ------------------------------------------------------->
+
+            <section id="about" class="about-section">
+                <h1>
+                    About me
+                </h1>
+                <img class="kp-about-pic"
+                    src="assets/images/kp-about-pic.png" 
+                    title="Kawindu priyashan" 
+                    alt="Kawindu priyashan" 
+                    width="200px"
+                >
+                
+                <p class="about-description">
+                    <i>Hello, I'm Kawindu priyashan, a Full-Stack Developer Student<br>
+                    who builds dynamic and user-friendly web applications.<br>
+                    I'm proficient in front-end technologies such as HTML,CSS and <br>
+                    Javascript and back-end technologies such as Mysql and Java.<br>
+                    I'm passionate about creating clean code and<br>
+                    solving complex problems to deliver high-quality solutions.<br>
+                    I thrive in fast-paced environments and enjoy collaborating<br>
+                    to build products that users love.<br>
+                    Always eager to learn and improve, I'm excited about taking <br>
+                    new chalenges in the tech world.<br>
+                    <b>Let's connect!</b></i>
+                </p>
+
+                <button class="contact-now-btn" 
+                        type="button">
+                            Contact me Now
+                </button>
+
+            </section>
+
+             <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+             <hr>
+
+             <!--------------------------------------------- Skills section ------------------------------------------------------->
+
+             <section id="skills" class="skills-section">
+                <h1 class="skills-headling">
+                    Skills
+                </h1>
+                
+                <div class="skill-panel">
+                    <div class="skill-java">
+                        <img class="java-logo" src="assets/images/java-logo.png" title="java" alt="java">
+                    </div>
+
+                    <div class="skill-python">
+                        <img class="python-logo" src="assets/images/python logo.png" title="python" alt="python">
+                    </div>
+
+                    <div class="skill-mysql">
+                        <img class="mysql-logo" src="assets/images/mysql-logo.png" title="mysql" alt="mysql">
+                    </div>
+
+                    <div class="skill-html">
+                        <img class="html-logo" src="assets/images/html logo.png" title="html" alt="html">
+                    </div>
+
+                    <div class="skill-css">
+                        <img class="css-logo" src="assets/images/css-logo.png" title="css" alt="css">
+                    </div>
+
+                    <div class="skill-js">
+                        <img class="js-logo" src="assets/images/Javascript logo.png" title="js" alt="js">
+                    </div>
+                </div>
+
+             </section>
+
+              <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+              <hr>
+
+              <!--------------------------------------------- Certificates section ------------------------------------------------------->
+
+            <section id="certificates" class="certificates-section">
+                <h1 class="certificates-headling">
+                    Certificates
+                </h1>
+
+                <div class="certificate-1"> 
+                    <img src="assets/images/java certificate.jpeg" 
+                        title="java certificate from sololearn" 
+                        alt="java certificate" 
+                        width="200px" 
+                    >
+                </div>
+
+                <div class="certificate-2">
+                  <h5>Coming soon</h5>
+                </div>
+
+            </section>
+
+              <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+              <hr>
+
+              <!--------------------------------------------- experience section ------------------------------------------------------->
+
+            <section id="experience" class="experience-section">
+                <h1 class="experience-headling">
+                    Experience
+                </h1>
+
+                <div class="experience-1"> 
+
+                    <table border="2">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="assets/images/ijse logo.jpg" 
+                                        title="IJSE logo" 
+                                        alt="IJSE" 
+                                        width="50px" 
+                                    >
+                                </td>
+                                <td>
+                                    <p class="exp-description">
+                                        Computer Science degree with Java computer language <br>currently studying at IJSE Institute.
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="exp-period">
+                                        1 Year
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             
+            </section>
+
+                <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+                <hr>
+
+                <!--------------------------------------------- projects section ------------------------------------------------------->
+
+            <section id="projects" class="projects-section">
+                <h1 class="projects-headling">
+                    Projects
+                </h1>
+
+                <div class="project-1"> 
+                    <h5>Coming soon</h5>
+                </div>
+
+                <div class="project-2">
+                    <h5>Coming soon</h5>
+                </div>
+
+            </section>
+
+                <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+                <hr>
+
+                <!--------------------------------------------- Contact section ------------------------------------------------------->
+
+                <section id="contact" class="contact-section">
+                    <h1 class="contact-headling">
+                        Contact me
+                    </h1>
+    
+                    <div class="contact-form"> 
+                        <form>
+                            <input class="first_name"
+                                    type="text" 
+                                    placeholder="First name" 
+                                    name="first_name"
+                            >
+
+                            <input class="last_name"
+                                type="text" 
+                                placeholder="Last name" 
+                                name="last_name"
+                            ><br>
+
+                            <input class="email"
+                                type="text" 
+                                placeholder="Email address" 
+                                name="email"
+                            >
+
+                            <input class="contact-no"
+                                type="text" 
+                                placeholder="Phone No." 
+                                name="contact"
+                            ><br>
+
+                            <textarea class="message"
+                                type="text" 
+                                placeholder="Message" 
+                                name="message"
+                                cols="46"
+                            ></textarea>
+
+                        </form>
+                    </div>
+    
+                </section>
+
+                <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+                <hr>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
 </html>
+
+
