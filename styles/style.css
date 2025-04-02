@@ -533,7 +533,7 @@ section.active{
 
 .projects-box .live-github a:hover{
     color: var(--main-color);
-    transform: translateX(-50%) scale(0.9);
+    transform: scale(0.9);
 
 }
 
