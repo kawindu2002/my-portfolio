@@ -101,6 +101,8 @@ nav a.active{
     display: flex;
     align-items: center;
     gap: 5rem;
+    height: 100rem;
+
 }
 
 .hero-details h1{
