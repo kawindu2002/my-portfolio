@@ -51,7 +51,6 @@ section.active{
     }
 }
 
-
 /*--------------------- Header Section Styles ---------------------*/
 
 
@@ -101,7 +100,6 @@ nav a.active{
     display: flex;
     align-items: center;
     gap: 5rem;
-
 }
 
 .hero-details h1{
@@ -774,7 +772,7 @@ nav a.active{
     .hero{
         flex-direction: column-reverse;
         justify-content: center;
-        gap: 2rem;
+        gap: 0.3rem;
     }
 
     .hero-img .img-box{
@@ -807,6 +805,14 @@ nav a.active{
 @media all and (max-width: 450px){
     html{
         font-size: 50%;
+    }
+
+    .hero-details h1{
+        font-size: 3.5rem;
+    }
+
+    .hero-details p {
+        margin-bottom: 0.5rem;
     }
 }
 
