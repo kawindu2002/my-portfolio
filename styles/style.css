@@ -31,7 +31,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    padding: 10rem 9% 1rem;
+    padding: 10rem 9% 2rem;
     background-color: var(--bg-color);
     visibility: hidden;
     opacity: 0;
@@ -824,7 +824,7 @@ nav a.active{
 
     .hero-details .btn-sci .sci{
         margin-left: 0;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
 }
