@@ -27,7 +27,34 @@ body{
     color: var(--white-color);
 }
 
+section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 9% 2rem;
+    background-color: var(--bg-color);
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+section.active{
+    animation: show-content 1.4s linear forwards;
+    animation-delay: 0.06s;
+}
+
+@keyframes show-content {
+    100%{
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
+}
+
+
 /*--------------------- Header Section Styles ---------------------*/
+
+
 header{
     position: fixed;
     top: 0;
@@ -69,29 +96,6 @@ nav a.active{
 
 /*--------------------- Hero Section Styles ---------------------*/
 
-section{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 10rem 9% 2rem;
-    background-color: var(--bg-color);
-    visibility: hidden;
-    opacity: 0;
-    overflow: hidden;
-}
-
-section.active{
-    animation: show-content 1.4s linear forwards;
-    animation-delay: 0.06s;
-}
-
-@keyframes show-content {
-    100%{
-        visibility: visible;
-        opacity: 1;
-        overflow: auto;
-    }
-}
 
 .hero{
     display: flex;
@@ -790,13 +794,39 @@ section.active{
     .projects-container .projects-box:first-child{
         order: 1;
     }
+}
 
-    .contact-box .field-box{
+@media all and (max-width: 600px){
+    .hero-img .img-box{
+        width: 30rem;
+        height: 30rem;
+    }
+}
 
+@media all and (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media all and (max-width: 400px){
+    .hero-details,
+    .resume-box h2,
+    .resume-box .heading,
+    .resume-box .desc,
+    .resume-detail.about-me .resume-item{
+        text-align: center;
+    }
+
+    .hero-details .btn-sci {
+        flex-direction: column-reverse;
+    }
+
+    .hero-details .btn-sci .sci{
+        margin-left: 0;
+        margin-bottom: 2rem;
     }
 
 }
-
-
 
 
