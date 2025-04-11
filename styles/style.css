@@ -14,7 +14,7 @@
 :root{
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --main-color: #7cf03d;
+    --main-color: gold;
     --white-color: #ffff;
     --disabled-color: #fff3;
 }
@@ -73,17 +73,24 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--bg-color);
     padding: 10rem 9% 2rem;
+    background-color: var(--bg-color);
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
 }
 
 section.active{
-    visibility: visible;
-    opacity: 1;
-    overflow: auto;
+    animation: show-content 1.4s linear forwards;
+    animation-delay: 0.06s;
+}
+
+@keyframes show-content {
+    100%{
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
 }
 
 .hero{
@@ -563,8 +570,233 @@ section.active{
 .projects-box .live-github a:hover span{
     top: -70%;
     opacity: 1;
-    scale: 1;
+    transform: translateX(-50%) scale(1);
+
 }
+
+.projects-box .img-box{
+    width: 100%;
+    height: 45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.projects-box .img-box .img-slide{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 2rem;
+    height: inherit;
+    transition: 0.5s;
+}
+
+.projects-box .img-box .img-item{
+    height: inherit;
+}
+
+.projects-box .img-box .img-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.projects-box .navigation{
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.projects-box .navigation button{
+    display: inline-flex;
+    padding: 0.4rem;
+    background-color: var(--second-bg-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    font-size: 4rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.projects-box .navigation button.disabled{
+    border-color: var(--second-bg-color);
+    color: var(--disabled-color);
+}
+
+.projects-box .navigation .arrow-right{
+    margin-left: 1.5rem;
+}
+
+/*--------------------- Contact Section Styles ---------------------*/
+
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+}
+
+.contact-container .contact-box:first-child{
+    align-self: center;
+}
+
+.contact-box h2{
+    font-size: 4.6rem;
+}
+
+.contact-box p{
+    font-size: 1.6rem;
+}
+
+.contact-box .desc{
+    margin: 1.5rem;
+}
+
+.contact-box .contact-detail{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.contact-detail i{
+    font-size: 3rem;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    margin-right: 1.6rem;
+    display: inline-flex;
+    background-color: var(--second-bg-color);
+    color: var(--main-color);
+}
+
+.contact-detail .detail p:first-child{
+    color: var(--main-color);
+}
+
+.contact-box form{
+    background-color: var(--second-bg-color);
+    padding: 2.5rem 3.4rem 3.4rem;
+    border-radius: 1.3rem;
+    text-align: center;
+}
+
+.contact-box .heading {
+    font-size: 3rem;
+}
+
+.contact-box .field-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.8rem;
+}
+
+.contact-box .field-box input,
+.contact-box .field-box textarea{
+    padding: 2.5rem;
+    background-color: var(--bg-color);
+    border: 0.16rem solid var(--bg-color);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.contact-box .field-box input:focus,
+.contact-box .field-box textarea:focus{
+    border-color: var(--main-color);
+}
+
+.contact-box .field-box > :last-child{
+    grid-column: 1/-1;
+    height: 20rem;
+    resize: none;
+}
+
+.contact-box .btn{
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*--------------------- Media queries ---------------------*/
+
+@media all and (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media all and (max-width: 992px){
+    header{
+        padding: 2rem 4%;
+    }
+
+    section{
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media all and (max-width: 810px){
+    .contact-box .field-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (max-width: 760px){
+    #menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: var(--bg-color);
+        border-top: 0.1rem solid rgba(0,0,0,0.2);
+        box-shadow: 0.5rem 1rem rgba(0,0,0,0.2);
+        text-align: center;
+        display: none;
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .hero-img .img-box{
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .resume-container,
+    .projects-container,
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+    .resume-container{
+        gap: 3rem;
+    }
+
+    .projects-container .projects-box:first-child{
+        order: 1;
+    }
+
+    .contact-box .field-box{
+
+    }
+
+}
+
 
 
 
