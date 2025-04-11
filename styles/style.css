@@ -490,6 +490,33 @@ nav a.active{
     font-size: 1.8rem;
 }
 
+/*--------------------- Resume Assignments Section Styles ---------------------*/
+
+.resume-detail.assignments .resume-list{
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    height: auto;
+    overflow: visible;
+}
+
+.resume-detail.assignments .resume-item{
+    position: relative;
+    align-items: center;
+    height: auto;
+    transition: 0.5s;
+}
+
+.resume-detail.assignments .resume-item a{
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.resume-detail.assignments .resume-item:hover a{
+    color: var(--main-color);
+    transform: scale(0.9);
+}
+
+
 /*--------------------- Projects Section Styles ---------------------*/
 
 .projects-container{
