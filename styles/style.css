@@ -25,6 +25,7 @@ html{
 
 body{
     color: var(--white-color);
+    cursor: url("../assets/images/code-cursor.png") 0 0, auto;
 }
 
 section{
