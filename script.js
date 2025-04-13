@@ -51,6 +51,13 @@ logoLink.addEventListener("click", () => {
 });
 
 
+// ============================ External navigations ===============================================================
+
+function openRepo(link) {
+    window.open(`${link}`, '_blank');
+}
+
+
 // ======================= Resume buttons navigation ==============================================================
 
 const resumeBtns = document.querySelectorAll(".resume-btn");
@@ -119,5 +126,4 @@ arrowLeft.addEventListener("click", () => {
     }
 });
 
-// =====================================================================================================================
 
