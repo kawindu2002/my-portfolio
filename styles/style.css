@@ -281,27 +281,6 @@ nav a.active{
     color: var(--main-color);
 }
 
-.service-box .service-icon a{
-    display: inline-flex;
-    background-color: var(--white-color);
-    border-radius: 50%;
-    padding: 1rem;
-    transition: 0.5s;
-}
-
-.service-box:hover .service-icon a{
-    background-color: var(--main-color);
-}
-
-.service-box .service-icon a i{
-    font-size: 3rem;
-    color: var(--bg-color);
-    transform: rotate(225deg);
-}
-
-.service-box .service-icon a:hover i{
-    transform: rotate(180deg);
-}
 
 .service-box h3{
     font-size: 3rem;
