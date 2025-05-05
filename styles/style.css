@@ -104,6 +104,7 @@ nav a.active{
 }
 
 .hero-details h1{
+    /*minimum size is 3.5rem.maximum size is 5.5rem.width is 10% of the viewport width.*/
     font-size: clamp(3.5rem,10vw,5.5rem);
 }
 
@@ -117,6 +118,7 @@ nav a.active{
     position: relative;
     display: inline-block;
     color: transparent;
+    /*Adds an outline (stroke) around the text.*/
     -webkit-text-stroke: 0.07rem var(--main-color);
     animation: display-text 24s linear infinite;
     animation-delay: calc(-6s * var(--i));
@@ -232,6 +234,7 @@ nav a.active{
     display: block;
     width: 85%;
     object-fit: cover;
+    /*blend with the background using the “lighten” effect.*/
     mix-blend-mode: lighten;
 }
 
@@ -249,6 +252,7 @@ nav a.active{
 
 .services-container{
     display: grid;
+    /*The smallest column size is 20rem and can grow up to take 1fr of the remaining space*/
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
 }
@@ -357,15 +361,18 @@ nav a.active{
     overflow: auto;
 }
 
+/*This only works in browsers that use WebKit (like Chrome and Safari)*/
 .resume-list::-webkit-scrollbar{
     width: 0.8rem;
 }
 
+/*Default scrollbar thumb is invisible*/
 .resume-list::-webkit-scrollbar-thumb{
     background-color: transparent;
     border-radius: 1rem;
 }
 
+/*scrollbar thumb (the draggable part) will become visible when we hover*/
 .resume-list:hover::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
@@ -392,19 +399,7 @@ nav a.active{
 
 .resume-item .company{
     position: relative;
-    margin-left: 2rem;
     margin-bottom: 2rem;
-}
-
-.resume-item .company::before{
-    content: '';
-    position: absolute;
-    top: 30%;
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    transform: translate(-50%);
-    margin-left: -1.5rem;
 }
 
 .resume-detail.skills .resume-list{
@@ -441,7 +436,6 @@ nav a.active{
     transform: scale(0.9);
     transition: 0.4s;
 }
-
 
 .resume-detail.skills .resume-item:hover span{
     top: -25%;
