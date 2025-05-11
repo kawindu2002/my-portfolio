@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>
-            My Portfolio
-        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+
         <link rel="icon" type="image/png" href="assets/images/kp-logo.png">
         <meta charset="UTF-8">
         <meta name="author" content="kawindu-priyashan,Full stack developer">
@@ -15,404 +16,432 @@
         <!-- fontawesome-icons -->
         <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
         <link rel="stylesheet" href="styles/style.css">
+
+        <!-- AOS CSS  -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
     <body>
+        <!-- Header Section -->
+        <header id="header">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#home" class="logo">KP.</a>
+                    <div class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                        <!-- From Uiverse.io by alexruix -->
+                            <label class="switch" id="mode-toggle">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </li>
 
-    <!-- ---------------- Header Section ---------------- -->
-        <header>
-                <a href="#" class="logo">KP.</a>
-                <i id="menu-icon" class="fa-solid fa-bars" style="color: #f5f5f5;"></i>
-                <nav>
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">Resume</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                    </ul>
                 </nav>
-            </header>
-
-    <!-- ---------------- Hero Section ---------------- -->
-        <section class="hero active">
-            <div class="hero-details">
-                <h1>Kawindu Priyashan</h1>
-                <h2>I'm a
-                    <span style="--i:4"  data-text="Coder">Coder</span>
-                    <span style="--i:3"  data-text="UI/UX Designer">UI/UX Designer</span>
-                    <span style="--i:2" data-text="Web Designer">Web Designer</span>
-                    <span style="--i:1" data-text="Web Developer">Web Developer</span>
-                </h2>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae explicabo minima modi sed? Adipisci aliquam quae quaerat quis veniam.</P>
-                <div class="btn-sci">
-                    <a href="assets/pdf/KP-CV.pdf" download class="btn">Download CV</a>
-                    <div class="sci">
-                        <a href="#"><i class="fa-brands fa-github" onclick="openRepo('https://github.com/kawindu2002')"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp" onclick="openRepo('https://wa.me/94769448077?text=Hi%21%20I%20came%20across%20your%20profile%20and%20was%20impressed%20by%20your%20work.%20I%27d%20love%20to%20connect%20regarding%20a%20software%20project.%20Let%20me%20know%20if%20you%27re%20available%21')"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin" onclick="openRepo('https://www.linkedin.com/in/kawindu-priyashan-04706331a/')"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord" onclick="openRepo('https://discord.com/users/sg_kp_45723')"></i></a>
-                    </div>
-                </div>
             </div>
-            <div class="hero-img">
-                <div class="img-box">
-                    <div class="img-item">
-                        <img src="assets/images/Kp_headshot_pic.png" alt="Profile-Pic" title="Kawindu priyashan">
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="hero-content">
+                        <h1>Hi, I'm <span>Kawindu Priyashan</span></h1>
+                        <p>I'm a Full Stack Developer crafting seamless digital experiences from sleek frontends to powerful backends not just websites, but web apps, tools, and systems that truly make a difference.</p>
+                        <div class="hero-btn">
+                            <a href="#contact" class="btn">Hire Me</a>
+                            <a href="assets/pdf/KP-CV.pdf" download class="btn view-btn">Download CV</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-    <!-- ---------------- Services Section ---------------- -->
-
-        <section class="services ">
-            <h2 class="heading">My
-                <span>Services</span>
-            </h2>
-            <div class="services-container">
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consectetur cumque distinctio, hic molestiae odio quas.
-                    </p>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
                 </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-palette"></i>
+                <div class="about-container" data-aos="fade-up">
+                    <div class="about-img">
+                        <img src="assets/images/Kp_headshot_pic.png" alt="About Me">
                     </div>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consectetur cumque distinctio, hic molestiae odio quas.
-                    </p>
-
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
-                    <h3>Application Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consectetur cumque distinctio, hic molestiae odio quas.
-                    </p>
-                </div>
-
-                <div class="service-box">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-paintbrush"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Consectetur cumque distinctio, hic molestiae odio quas.
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-    <!-- ---------------- Resume Section ---------------- -->
-
-        <section class="resume ">
-            <div class="resume-container">
-                <div class="resume-box">
-                    <h2>Why Hire Me?</h2>
-                    <p class="desc">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Similique, suscipit.
-                    </p>
-                    <button class="resume-btn active">Experience</button>
-                    <button class="resume-btn">Education</button>
-                    <button class="resume-btn">About Me</button>
-                    <button class="resume-btn">Skills</button>
-                    <button class="resume-btn">Assignments</button>
-                </div>
-
-            <!-- ---------------- Experience Section ---------------- -->
-
-                <div class="resume-box">
-
-                    <div class="resume-detail experience active">
-                        <h2 class="heading">My
-                            <span>Experience</span>
-                        </h2>
-                        <p class="desc">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Earum, illum.
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                               <p class="year">2025 - Present</p>
-                                <h3>Student</h3>
-                                <p class="company">IJSE institute</p>
-                                <p>Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Magni, voluptate!
-                                </p>
-                                <!--We can add more when we get experiences-->
-                            </div>
-                        </div>
-                    </div>
-
-            <!-- ---------------- Education Section ---------------- -->
-
-                    <div class="resume-detail education ">
-                        <h2 class="heading">My
-                            <span>Education</span>
-                        </h2>
-                        <p class="desc">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Earum, illum.
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <p class="year">2025 - Present</p>
-                                <h3>Software Engineering</h3>
-                                <p class="company">IJSE institute</p>
-                                <p>Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Magni, voluptate!
-                                </p>
-                            </div>
-                            <div class="resume-item">
-                                <p class="year">2021</p>
-                                <h3>A/L Maths Stream</h3>
-                                <p class="company">Ananda Sastralaya National School,Mathugama</p>
-                                <p>Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Magni, voluptate!
-                                </p>
-                            </div>
-                            <div class="resume-item">
-                                <p class="year">2018</p>
-                                <h3>O/L</h3>
-                                <p class="company">Ananda Sastralaya National School,Mathugama</p>
-                                <p>Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Magni, voluptate!
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-            <!-- ---------------- About Section ---------------- -->
-
-                    <div class="resume-detail about-me ">
-                        <h2 class="heading">About
-                            <span>Me</span>
-                        </h2>
-                        <p class="desc">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Earum, illum.
-                        </p>
-
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <p>Name <span>Kawindu Priyashan</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Gender <span>Male</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Age <span>22 Years Old</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Country <span>Sri Lanka</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Full-Time <span>Available</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Freelance <span>Available</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Gmail <span>kawindupriyashan@gmail.com</span></p>
-                            </div>
-                            <div class="resume-item">
-                                <p>Languages <span>Sinhala,English</span></p>
-                            </div>
-                        </div>
-                    </div>
-
-            <!-- ---------------- Skills Section ---------------- -->
-
-                    <div class="resume-detail skills">
-                        <h2 class="heading">My
-                            <span>Skills</span>
-                        </h2>
-                        <p class="desc">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Earum, illum.
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <i class="fa-brands fa-css3-alt"></i>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="fa-brands fa-html5"></i>
-                                <span>HTML5</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="fa-brands fa-js"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="fa-brands fa-bootstrap"></i>
-                                <span>Bootsrap CSS</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="fa-brands fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="resume-item">
-                                <i class="fa-solid fa-database"></i>
-                                <span>MYSQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-            <!-- ---------------- Assignments Section ---------------- -->
-
-                    <div class="resume-detail assignments">
-                        <h2 class="heading">My
-                            <span>Assignments</span>
-                        </h2>
-                        <p class="desc">Lorem ipsum dolor sit amet,
-                            consectetur adipisicing elit. Earum, illum.
-                        </p>
-                        <div class="resume-list">
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 01</h3></a>
-                            </div>
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 02</h3></a>
-                            </div>
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 03</h3></a>
-                            </div>
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 04</h3></a>
-                            </div>
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 05</h3></a>
-                            </div>
-                            <div class="resume-item">
-                                <a class="assignment-link" href="#"><h3>Assignment 06</h3></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-    <!-- ---------------- Projects Section ---------------- -->
-
-        <section class="projects">
-            <h2 class="heading">Latest <span>Projects</span></h2>
-            <div class="projects-container">
-                <div class="projects-box">
-                    <div class="projects-detail active">
-                        <p class="numb">01</p>
-                        <h3>Library Management System</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut illo modi nobis nulla repellat unde.
-                        </p>
-                        <div class="tech">
-                            <p>Java, Mysql, Jasper Reports</p>
-                        </div>
-                        <div class="live-github">
-                            <a href="#"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
-                            <a href="#"><i class="fa-brands fa-github" onclick="openRepo('https://github.com/kawindu2002/LibraryProject')"></i><span>Github Repository</span></a>
-                        </div>
-                    </div>
-                    <div class="projects-detail">
-                        <p class="numb">02</p>
-                        <h3>Therapy Center Management System</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Aut illo modi nobis nulla repellat unde.
-                        </p>
-                        <div class="tech">
-                            <p>Java, Mysql, Jasper Reports</p>
-                        </div>
-                        <div class="live-github">
-                            <a href="#"><i class="fa-solid fa-arrow-left"></i><span>Live Project</span></a>
-                            <a href="#"><i class="fa-brands fa-github" onclick="openRepo('https://github.com/kawindu2002/Therapy-center')"></i><span>Github Repository</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="projects-box">
-                    <div class="img-box">
-                        <div class="img-slide">
-                            <div class="img-item">
-                                <img src="assets/images/library-project-pic.png"
-                                     alt="Library project pic"
-                                     title="Library Management System">
-                            </div>
-                            <div class="img-item">
-                                <img src="assets/images/therapy-center-pic.png"
-                                     alt="therapy center project pic"
-                                     title="Therapy Center System">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="navigation">
-                        <button class="arrow-left disabled"><i class="fa-solid fa-chevron-left"></i></button>
-                        <button class="arrow-right"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="about-content">
+                        <h3>Full Stack Developer</h3>
+                            <p>I'm a passionate Full Stack Developer committed to crafting exceptional digital experiences.</p>
+                            <p>With strong expertise in both frontend and backend technologies, I create websites and applications that are not only visually appealing but also highly functional and efficient.</p>
+                            <p>I focus on clean code, responsive design, and seamless user experiences across all platforms.</p>
+                        <a href="#contact" class="btn">Let's Connect</a>
                     </div>
                 </div>
             </div>
         </section>
 
-    <!-- ---------------- Contact Section ---------------- -->
-
-    <section class="contact">
-        <div class="contact-container">
-            <div class="contact-box">
-                <h2>Let's Create Something great</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, ut?</p>
-                <div class="contact-detail">
-                    <i class="fa-solid fa-phone"></i>
-                    <div class="detail">
-                        <P>Mobile</P>
-                        <P>(+94)76 944 8077</P>
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Bootstrap4</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <h4>mySql</h4>
+                        </div>
                     </div>
                 </div>
-
-                <div class="contact-detail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div class="detail">
-                        <P>Email</P>
-                        <P>kawindupriyashan@gmail.com</P>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div class="detail">
-                        <P>Address</P>
-                        <P>No 197, Rathnapura Rd, Bellana Junction</P>
-                    </div>
-                </div>
-
             </div>
+        </section>
 
-
-            <div class="contact-box">
-               <form action="#">
-                   <h2 class="heading">Contact <span>Me</span></h2>
-                   <div class="field-box">
-                       <input type="text" placeholder="Full Name" required>
-                       <input type="email" placeholder="Email Address" required>
-                       <input type="text" placeholder="Phone Number" required>
-                       <input type="text" placeholder="Email Subject" required>
-                       <textarea name="" id="" placeholder="Your Message" required></textarea>
-                   </div>
-                   <button type="submit" class="btn">Send Message</button>
-               </form>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="custom-shape-divider-bottom-1746899408">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
-        </div>
-    </section>
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="projects-container">
+                    <div class="project-item" data-aos="fade-up">
+                        <div class="project-img">
+                            <img src="assets/images/pos-system-img.png" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h4>Simple POS Web System</h4>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">Javascript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" title="View Live"><i class="fas fa-external-link-alt"></i> Live</a>
+                                <a href="#" title="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item" data-aos="fade-up">
+                        <div class="project-img">
+                            <img src="assets/images/library-project-pic.png" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h4>Library Management System</h4>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">MySql</span>
+                                <span class="project-tag">Jasper Reports</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" title="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item" data-aos="fade-up">
+                        <div class="project-img">
+                            <img src="assets/images/therapy-center-pic.png" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h4>Therapy Center Management System</h4>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">MySql</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" title="View Code"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Assignments Section -->
+        <section id="assignments" class="assignments">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Assignments</h2>
+                </div>
+                <div class="assignments-container">
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 01</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 02</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 03</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 04</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 05</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-item" data-aos="flip-left">
+                        <div class="hover-wrapper">
+                            <div class="assignment-header">
+                                <h4>
+                                    <a href="#">Assignment 06</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Certificates</h2>
+                </div>
+                <div class="certificates-container">
+                    <div class="certificate-item" data-aos="fade-up">
+                        <div class="certificate-img">
+                            <img src="assets/images/java%20certificate.jpeg" alt="Certificate 1">
+                        </div>
+                        <div class="certificate-info">
+                            <h4>Introduction to Java</h4>
+                            <div class="certificate-issuer">
+                                <i class="fas fa-award"></i>
+                                <span>Sololearn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-item" data-aos="fade-up">
+                        <div class="certificate-img">
+                            <img src="assets/images/HTML%20sololearn%20certificate.jpg" alt="Certificate 2">
+                        </div>
+                        <div class="certificate-info">
+                            <h4>Introduction to HTML</h4>
+                            <div class="certificate-issuer">
+                                <i class="fas fa-award"></i>
+                                <span>Sololearn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="certificate-item" data-aos="fade-up">
+                        <div class="certificate-img">
+                            <img src="assets/images/CSS%20sololearn%20certificate.jpg" alt="Certificate 3">
+                        </div>
+                        <div class="certificate-info">
+                            <h4>Introduction to CSS</h4>
+                            <div class="certificate-issuer">
+                                <i class="fas fa-award"></i>
+                                <span>Sololearn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Sri Lanka</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>kawindupriyashan@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>+94 71 712 8366</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" onclick="openLink('https://github.com/kawindu2002')"><i class="fa-brands fa-github" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://wa.me/94769448077?text=Hi%21%20I%20came%20across%20your%20profile%20and%20was%20impressed%20by%20your%20work.%20I%27d%20love%20to%20connect%20regarding%20a%20software%20project.%20Let%20me%20know%20if%20you%27re%20available%21')"><i class="fa-brands fa-whatsapp" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://www.linkedin.com/in/kawindu-priyashan-04706331a/')"><i class="fa-brands fa-linkedin" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://discord.com/users/sg_kp_45723')"><i class="fa-brands fa-discord" ></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form" data-aos="fade-left">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col">
+                        <h4>About</h4>
+                        <p>I'm a passionate Full Stack Developer creating visually appealing, high-performing websites and applications.
+                            I blend frontend and backend expertise to deliver clean, responsive, and user-friendly digital experiences.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" onclick="openLink('https://github.com/kawindu2002')"><i class="fa-brands fa-github" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://wa.me/94769448077?text=Hi%21%20I%20came%20across%20your%20profile%20and%20was%20impressed%20by%20your%20work.%20I%27d%20love%20to%20connect%20regarding%20a%20software%20project.%20Let%20me%20know%20if%20you%27re%20available%21')"><i class="fa-brands fa-whatsapp" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://www.linkedin.com/in/kawindu-priyashan-04706331a/')"><i class="fa-brands fa-linkedin" ></i></a>
+                            <a href="#" class="social-link" onclick="openLink('https://discord.com/users/sg_kp_45723')"><i class="fa-brands fa-discord" ></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#assignments">Assignments</a></li>
+                            <li><a href="#certificates">Certificates</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                            <li><a href="#">Application Development</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Kawindu Priyashan. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
 
     <script src="script.js"></script>
-    </body>>
-</html>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>
 
