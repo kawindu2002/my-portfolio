@@ -649,52 +649,8 @@ textarea.form-control {
     gap: 3rem;
 }
 
-.footer-col h4 {
-    color: var(--white);
-    margin-bottom: 1.5rem;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.footer-col h4::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 2px;
-    background: var(--primary);
-}
-
-.footer-links {
-    list-style: none;
-}
-
-.footer-links li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-links a {
-    text-decoration: none;
-    color: #b3c0d6;
-    transition: var(--transition);
-}
-
-.footer-links a:hover {
-    padding-left: 0.5rem;
-}
-
-.footer-social {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* ----------------------------*/
@@ -731,7 +687,6 @@ body.dark-mode .custom-shape-divider-bottom-1746899408 .shape-fill {
     height: 0;
 }
 
-/* The slider */
 .slider {
     --background: #28096b;
     position: absolute;
